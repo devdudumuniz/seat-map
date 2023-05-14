@@ -1,0 +1,450 @@
+* {
+    box-sizing: border-box;
+}
+
+.selecionada {
+    background-color: #0f0;
+}
+
+.traseira {
+    bottom: -5%;
+    height: .5rem;
+    background-color: #b0b0b159;
+    box-shadow: 30px 5px 10px #b0b0b159;
+}
+
+.td-flex {
+    height: 100%;
+    justify-content: center;
+    display: flex;
+}
+
+.selecionado-cor {
+    background-color: #6CBC64;
+    height: 25px;
+    width: 25px;
+}
+
+.livre-cor {
+    background-color: #00356a;
+    height: 25px;
+    width: 25px;
+}
+.ocupado-cor{
+    background-color: #fff;
+    height: 26px!important;
+    width: 26px!important;
+}
+.cor-text-black p{
+    color: #000;
+}
+@media(max-width: 900px) {
+
+    .escada {
+        border-radius: 10px 0 0 10px;
+        background-color: #b0b0b159;
+        width: 35%;
+        height: 2.5rem!important;
+    }
+
+    .escada p {
+        text-shadow: 0px 1px 1px #b0b0b159;
+        color: #000;
+        margin: auto;
+        font-size: 1rem;
+    }
+
+    .volante {
+        margin: 4% auto 3% 5%;
+        width: 20%;
+    }
+
+    .onibus {
+        margin: 5% auto;
+        overflow: hidden;
+        border-radius: 3rem 3rem 5% 5%;
+    }
+
+    .header-onibus {
+        display: flex;
+        right: 10%;
+        width: 100%;
+        height: 2rem;
+        background-color: #b0b0b159;
+    }
+
+    .farol {
+        border-radius: 0 0 30px 30px;
+        top: -24%;
+        position: relative;
+        background-color: #b7b4b4;
+        width: 2.2rem;
+        height: 80%;
+    }
+
+    .linha {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .corredor {
+        width: 10% !important;
+    }
+
+    .fila {
+        display: flex;
+        justify-content: space-around;
+        width: 45%;
+        height: 5rem;
+    }
+
+    .linha-um {
+        justify-content: space-between;
+        display: flex;
+        width: 100%;
+    }
+
+    .linha-um img {
+        width: 80%;
+    }
+
+    .livre {
+        position: relative;
+        cursor: pointer;
+        background-color: #00356a;
+        margin: auto;
+        height: 80%;
+        width: 40%;
+        color: #fff;
+    }
+
+    .ocupada {
+        cursor: not-allowed;
+        position: relative;
+        background-color: #b0b0b159;
+        margin: auto;
+        height: 80%;
+        width: 40%;
+        color: #fff;
+    }
+
+    .liberado {
+        position: relative;
+        cursor: pointer;
+        color: #fff;
+        font-weight: 800;
+        background-color: #6CBC64;
+        margin: auto;
+        height: 80%;
+        width: 40%;
+    }
+
+    .color-assento {
+        background-color: #6CBC64;
+        height: 25px;
+        width: 25px;
+    }
+
+    .excluir-assento {
+        background-color: #C60404 !important;
+        height: 25px;
+        width: 25px;
+    }
+
+    .fila div p {
+        top: 20%;
+        position: relative;
+        font-size: 1.2rem;
+    }
+
+    .corredor {
+        width: 10% !important;
+    }
+
+    .livre .encosto {
+        position: absolute;
+        margin: auto;
+        width: 60%;
+        height: 1rem;
+        background-color: #f15d30;
+        bottom: -8%;
+        left: 21%;
+    }
+
+    .ocupada .encosto {
+        position: absolute;
+        margin: auto;
+        width: 60%;
+        height: 1rem;
+        background-color: #b7b4b4;
+        bottom: -8%;
+        left: 21%;
+    }
+
+    .liberado .encosto {
+        position: absolute;
+        margin: auto;
+        width: 60%;
+        height: 1rem;
+        background-color: #FCFC8C;
+        bottom: -8%;
+        left: 21%;
+    }
+
+    .banheiro {
+        display: flex;
+        justify-content: center;
+        color: #000 !important;
+        border-radius: 10px 0 10px 0;
+        height: 90% !important;
+        width: 90% !important;
+        background-color: #b0b0b159 !important;
+    }
+
+}
+
+@media(min-width:900px) {
+    .cont-onibus form{
+        border-left: 1px solid #ced0d1!important;
+    }
+    .header-onibus {
+        position: relative;
+        width: 2rem;
+        height: 100%;
+        right: 0;
+        background-color: #b0b0b159;
+    }
+
+    .farol {
+        margin: auto;
+        border-radius: 100%;
+        background-color: #b7b4b4;
+        width: 2.2rem;
+        height: 2.2rem;
+    }
+
+    .farol-left {
+        position: relative;
+        left: -.6rem;
+        top: 0%;
+    }
+
+    .farol-right {
+        position: relative;
+        left: -.6rem;
+        top: 75%;
+    }
+
+    .linha {
+        width: 4rem !important;
+        display: block;
+        width: 100%;
+    }
+
+    .linha-um {
+        margin: auto 1%;
+        position: relative;
+        width: 5rem !important;
+        height: 100%;
+    }
+
+
+    .fila {
+        height: 45% !important;
+        width: 100%;
+    }
+
+
+    .volante {
+        display: flex;
+        justify-content: center;
+        margin: 40% auto;
+        height: 20%;
+        width: 100%;
+    }
+
+    .volante img {
+        margin: auto;
+        height: 90%;
+        transform: rotate(-90deg);
+    }
+
+    .escada {
+        position: absolute;
+        border-radius: 10px 10px 0 0;
+        background-color: #b0b0b159;
+        height: 35%;
+        bottom: 0;
+        left: 15%;
+        align-items: center;
+        width: 70% !important;
+    }
+
+    .escada p {
+        margin-top: 50%;
+        text-shadow: 0px 1px 1px #b0b0b159;
+        color: #000;
+        transform: rotate(90deg) scaleY(-1);
+        font-size: .7rem;
+    }
+
+    .corredor {
+        height: 10% !important;
+    }
+
+    .livre {
+        position: relative;
+        cursor: pointer;
+        background-color: #00356a;
+        margin: auto;
+        height: 50%;
+        width: 90%;
+        color: #fff;
+    }
+
+    .ocupada {
+        border: 1px solid #b7b4b4;
+        cursor: not-allowed;
+        position: relative;
+        background-color: #fff;
+        margin: auto;
+        height: 50%;
+        width: 90%;
+    }
+
+    .liberado {
+        position: relative;
+        cursor: pointer;
+        color: #fff;
+        font-weight: 800;
+        background-color: #6CBC64;
+        margin: auto;
+        height: 50%;
+        width: 90%;
+    }
+
+    .banheiro {
+        color: #000 !important;
+        border-radius: 10px 0 10px 0;
+        height: 100% !important;
+        width: 90% !important;
+        background-color: #b0b0b159 !important;
+        align-items: center;
+    }
+
+    .banheiro p {
+        text-align: center;
+        margin: auto;
+    }
+
+    .fila div p {
+        transform: scaleY(-1);
+        position: relative;
+        top: 30%;
+        font-size: .8rem;
+    }
+
+    .cont-onibus-tamanho {
+        justify-content: center;
+    }
+
+    .onibus {
+        transform: scaleY(-1);
+        overflow: hidden;
+        border-radius: 3rem 1rem 1rem 3rem;
+        display: flex;
+        margin: 2% 0 !important;
+        height: 18rem;
+    }
+
+    .livre .encosto {
+        position: absolute;
+        margin: auto;
+        width: .8rem;
+        height: 60%;
+        background-color: #f15d30;
+        bottom: 20%;
+        right: -10%;
+    }
+
+    .ocupada .encosto {
+        border: 1px solid #b7b4b4;
+        position: absolute;
+        margin: auto;
+        width: .8rem;
+        height: 60%;
+        background-color: #fff;
+        bottom: 20%;
+        right: -10%;
+    }
+
+    .ocupada p {
+        color: #b7b4b4;
+        top: 35% !important;
+        font-size: 1.2rem !important;
+    }
+
+    .liberado .encosto {
+        position: absolute;
+        margin: auto;
+        width: .8rem;
+        height: 60%;
+        background-color: #FCFC8C;
+        bottom: 20%;
+        right: -10%;
+    }
+
+    .color-assento {
+        background-color: #6CBC64;
+        height: 25px;
+        width: 25px;
+    }
+
+    .excluir-assento {
+        background-color: #C60404 !important;
+        height: 25px;
+        width: 25px;
+    }
+
+    .direita-table {
+        overflow-y: auto;
+        overflow-x: hidden;
+        max-height: 20rem;
+    }
+
+    .direita-table::-webkit-scrollbar {
+        width: 3px;
+    }
+
+    .direita-table::-webkit-scrollbar-track {
+        background-color: #00356a;
+    }
+
+    .direita-table::-webkit-scrollbar-thumb {
+        background-color: #00356a;
+    }
+
+    .cabec>th {
+        font-size: .8rem !important;
+    }
+
+}
+
+.cadeiraSelecionada {
+    display: none;
+}
+
+.esconder {
+    display: none;
+}
+
+.informa p {
+    margin: auto 2%;
+    font-size: .8rem;
+}
+
+td {
+    border: none !important;
+    min-height: 100% !important;
+}
